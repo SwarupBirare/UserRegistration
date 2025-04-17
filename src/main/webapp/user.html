@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="./CSS/Form.css">
+</head>
+<body>
+    <center><h1 id="heading">User Registration & Operation Form</h1></center>
+
+    <form action="add" method="get" id="add">
+        <center><h1>ADD USER</h1></center>
+        id: <input type="text" name="id" required> 
+        name: <input type="text" name="name" required>
+        age: <input type="text" name="age" required>
+        gender: 
+        <select name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+        phone: <input type="text" name="phone" required>
+        email: <input type="email" name="email" required><br>
+        city: <input type="text" name="city" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <form action="delete" method="get" id="delete">
+        <center><h1>DELETE USER</h1></center>
+        id: <input type="text" name="id" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <form action="update" method="get" id="update">
+        <center><h1>UPDATE USER</h1></center>
+        id: <input type="text" name="id" required>
+        name: <input type="text" name="name" required>
+        age: <input type="text" name="age" required>
+        gender: 
+        <select name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+        phone: <input type="text" name="phone" required>
+        email: <input type="email" name="email" required>
+        city: <input type="text" name="city" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <form action="getid" method="get" id="getid">
+        <center><h1>GET USER BY ID</h1></center>
+        id: <input type="text" name="id" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <form action="searchByName" method="get" id="searchname">
+        <center><h1>SEARCH USER BY NAME</h1></center>
+        name: <input type="text" name="name" required><br>
+        <input type="submit" value="Search">
+    </form>
+    <hr>
+
+    <form action="searchByCity" method="get" id="searchcity">
+        <center><h1>SEARCH USER BY CITY</h1></center>
+        city: <input type="text" name="city" required><br>
+        <input type="submit" value="Search">
+    </form>
+    <hr>
+
+	<center>
+    <h1><a href="sortByAge">SORT USERS BY AGE</a></h1>
+    <hr>
+    <h1><a href="sortByGender">SORT USERS BY GENDER</a></h1>
+    <hr>
+
+    <h1><a href="read">READ ALL USERS</a></h1>
+    <br>
+    </center>
+    <hr>
+</body>
+</html>

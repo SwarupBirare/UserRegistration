@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>UserRegistrationSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>user.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>AddServlet</servlet-name>
+		<servlet-class>com.controller.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddServlet</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReadServlet</servlet-name>
+		<servlet-class>com.controller.ReadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReadServlet</servlet-name>
+		<url-pattern>/read</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>com.controller.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>com.controller.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserUpdateForm</servlet-name>
+		<servlet-class>com.controller.UserUpdateForm</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserUpdateForm</servlet-name>
+		<url-pattern>/UserUpdateForm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetIdServlet</servlet-name>
+		<servlet-class>com.controller.GetIdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIdServlet</servlet-name>
+		<url-pattern>/getid</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SearchByNameServlet</servlet-name>
+		<servlet-class>com.controller.SearchByNameServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchByNameServlet</servlet-name>
+		<url-pattern>/searchByName</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SearchByCityServlet</servlet-name>
+		<servlet-class>com.controller.SearchByCityServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchByCityServlet</servlet-name>
+		<url-pattern>/searchByCity</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>SortByAgeServlet</servlet-name>
+		<servlet-class>com.controller.SortByAgeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SortByAgeServlet</servlet-name>
+		<url-pattern>/sortByAge</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SortByGenderServlet</servlet-name>
+		<servlet-class>com.controller.SortByGenderServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SortByGenderServlet</servlet-name>
+		<url-pattern>/sortByGender</url-pattern>
+	</servlet-mapping>
+
+</web-app>
